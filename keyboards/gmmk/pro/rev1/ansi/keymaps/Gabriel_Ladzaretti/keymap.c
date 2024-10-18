@@ -40,14 +40,6 @@ const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-//      ESC      F1       F2       F3       F4       F5       F6       F7       F8       F9       F10      F11      F12	     Prt           Rotary(Mute)
-//      ~        1        2        3        4        5        6        7        8        9        0         -       (=)	     BackSpc           Del
-//      Tab      Q        W        E        R        T        Y        U        I        O        P        [        ]        \                 PgUp
-//      Caps     A        S        D        F        G        H        J        K        L        ;        "                 Enter             PgDn
-//      Sh_L              Z        X        C        V        B        N        M        ,        .        ?                 Sh_R     Up       End
-//      Ct_L     Win_L    Alt_L                               SPACE                               Alt_R    FN       Ct_R     Left     Down     Right
-
-
     // The FN key by default maps to a momentary toggle to layer 1 to provide access to the QK_BOOT key (to put the board into bootloader mode). Without
     // this mapping, you have to open the case to hit the button on the bottom of the PCB (near the USB cable attachment) while plugging in the USB
     // cable to get the board into bootloader mode - definitely not fun when you're working on your QMK builds. Remove this and put it back to KC_RGUI
@@ -92,8 +84,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,      _______, _______,                            _______,                            KC_RALT, _______, KC_RCTL, RGB_SPD, RGB_RMOD, RGB_SPI
     ),
 
-    //  ESC           F1         F2         F3         F4         F5               F6         F7         F8         F9         F10        F11        F12	      Prt               Rotary(Mute)
-    //  ~             1          2          3          4          5                6          7          8          9          0           -         (=)	      BackSpc               Del
+    //  ESC           F1         F2         F3         F4         F5               F6         F7         F8         F9         F10        F11        F12	    Prt               Rotary(Mute)
+    //  ~             1          2          3          4          5                6          7          8          9          0           -         (=)	    BackSpc               Del
     //  Tab           Q          W          E          R          T                Y          U          I          O          P          [          ]          \                     PgUp
     //  Caps          A          S          D          F          G                H          J          K          L          ;          "                     Enter                 PgDn
     //  Sh_L                     Z          X          C          V                B          N          M          ,          .          ?                     Sh_R       Up         End
