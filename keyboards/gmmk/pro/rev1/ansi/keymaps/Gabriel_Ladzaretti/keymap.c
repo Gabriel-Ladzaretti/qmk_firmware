@@ -35,7 +35,7 @@ tap_dance_action_t tap_dance_actions[] = {
 };
 
 // Key Override Definitions
-const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+// const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -101,9 +101,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 // Globally defines all key overrides
-const key_override_t *key_overrides[] = {
-	&delete_key_override,
-};
+// const key_override_t *key_overrides[] = {
+// 	&delete_key_override,
+// };
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
